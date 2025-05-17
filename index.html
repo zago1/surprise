@@ -7,11 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="loading-overlay"></div>
+    <div class="loading-spinner"></div>
     <div class="container">
-        <button id="surpriseButton" class="surprise-button">Clique para ver a surpresa</button>
-        <div id="surpriseContent" class="surprise-content hidden">
-            <h2>Surpresa!</h2>
-            <img src="surprise.jpg" alt="Imagem surpresa" class="surprise-image">
+        <!-- Step 1 -->
+        <div id="step1" class="step active">
+            <h2>Quem te mandou isso quer te mostrar uma coisa!</h2>
+            <button class="surprise-button" data-next="step2">Quero Ver!</button>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="step2" class="step">
+            <h2>Então senta que lá vem surpresa!</h2>
+            <button class="surprise-button" data-next="step3">Ver Surpresa!</button>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="step3" class="step">
+            <h2>Surpresaaa!</h2>
+            <img src="surprise.jpeg" alt="Imagem surpresa" class="surprise-image">
         </div>
     </div>
     <script src="script.js"></script>
