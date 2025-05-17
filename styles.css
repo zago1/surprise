@@ -29,7 +29,7 @@ body {
 .step {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -122,6 +122,18 @@ h2 {
     background-clip: text;
 }
 
+/* Specific style for the final surprise text */
+#step3 h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-fill-color: #fff;
+    background: none;
+}
+
 @media (max-width: 768px) {
     .surprise-button {
         padding: 12px 24px;
@@ -135,6 +147,11 @@ h2 {
     h2 {
         font-size: 1.5rem;
         padding: 0 1rem;
+    }
+
+    #step3 h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
     }
 }
 

@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Hide loading state
                 hideLoading();
-            }, 1000); // 1 second loading time
+            }, 600); // Reduced from 1000ms to 600ms
         });
     });
 }); 
